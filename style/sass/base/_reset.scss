@@ -1,0 +1,116 @@
+
+.show-user-account{
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+
+.overflow-hidden-body {
+  overflow: hidden;
+}
+  
+  .icon-color{
+  color: $second-color !important;
+  }
+
+  .showToTop{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .fixed{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 11%);
+    background-color: #fff;
+    transition: all linear .5s;
+  }
+
+
+  
+.fixedset {
+    top: -150px;
+    transition: all linear .5s;
+  }
+
+  
+.swiper-pagination-bullet-active{
+    background-color: $second-color;
+  }
+
+  .header-padding-30{
+    padding-left: 30px ;
+    padding-right: 30px ;
+  }
+
+
+  
+.padding-30 {
+  padding-left: 30px ;
+  padding-right: 30px;
+}
+
+
+.d-block{
+  display: block;
+}
+.d-none{
+  display: none;
+}
+
+
+.fixed-header{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .main-nav{
+    padding: 7px 30px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+  @include min-768{
+    .li-drop > a{
+       line-height: 35px;
+     }
+   }
+   
+}
+
+
+
+  
+@include max-768 {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .fixed-whatsapp{
+      width: 50px;
+      height: 50px;
+      i {
+        font-size: 30px;
+      }
+    }
+    .toTop{
+      right: 19px;
+      bottom: 80px;
+    }
+   
+  }
+
+
+  
+
+
+  
+@include min-1200{
+    .container, .container-lg, .container-md, .container-sm, .container-xl{
+      max-width: 1170px;
+    }
+  }
+
+  
+  
