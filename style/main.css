@@ -988,7 +988,7 @@ nav .closeBtn {
 .mega-item ul li a {
   color: #808080;
   font-size: 14px;
-  line-height: 34px;
+  line-height: 28px;
   transition: all linear 0.2s;
   font-weight: 500;
 }
@@ -2143,7 +2143,7 @@ html[dir=ltr] .message input {
 }
 
 .fixed-header {
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #F2F2F2;
 }
 .fixed-header .main-nav {
   padding: 12px 30px;
