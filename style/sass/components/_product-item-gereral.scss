@@ -134,7 +134,7 @@
     .current-price{
         font-size: 16px;
         color: #000000;
-        font-weight: 500;
+        font-weight: 700;
         margin-bottom: 0;
         margin-inline-end: 7px;
     }
@@ -142,7 +142,7 @@
         font-size: 14px;
         text-decoration: line-through;
         color: #4d4d4d;
-        font-weight: 400;
+        font-weight: 300;
     }
 }
 
@@ -201,9 +201,7 @@
     .general-sec{
         padding: 50px 0 100px 0;
     }
-    .most-viewed, .special-offers, .bestseller{
-        border-bottom: none;
-    }
+   
 }
 
 @include max-768 {
@@ -212,13 +210,13 @@
         align-items: center;
     }
     .general-sec{
-        padding: 50px  0 ;
+        padding: 40px  0 70px 0 ;
     }
     .newArrivals{
         padding-bottom: 70px;
     }
     .general-sec .swiper-horizontal > .swiper-pagination-bullets, .general-sec .swiper-pagination-bullets.swiper-pagination-horizontal, .general-sec .swiper-pagination-custom, .general-sec .swiper-pagination-fraction{
-        bottom: -40px;
+        bottom: -30px;
     }
     .like-cart-sec button{
         width: 28px;

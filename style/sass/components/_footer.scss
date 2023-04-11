@@ -74,9 +74,9 @@ ul li {
     font-size: 16px;
     line-height: 32px;
    a{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 27px;
-    font-weight: 500;
+    font-weight: 400;
     color: #808080;
     text-transform: capitalize;
     transition: all linear .2s;
@@ -255,8 +255,7 @@ img{
 
 @include max-768 {
     .copyright .tasawk-logo{
-       margin-top: 15px;
-       margin-bottom: 10px;
+       order: 3;
     }
     .footer-item{
         margin-top: 0;
@@ -346,6 +345,7 @@ img{
     }
     .copyright .rights{
         order: 2;
+        margin: 14px 0 6px 0;
         text-align: center;
         font-size: 13px;
         width: 100%;

@@ -354,12 +354,18 @@ $(".cart").click(function(){
 if($(window).width() <= 992) {  
   $(".li-drop > a").click(function (e) {
     e.preventDefault() ;
-    $(this).siblings(".mega-menu").children(".container").children(".mega-items-parent").slideToggle(400) ;
+    $(this).siblings(".mega-menu").children(".container").children(".mega-items-parent").slideToggle(300) ;
     $(this).toggleClass("nav-arrow-rotate");
     $(".li-drop > a ").not(this).siblings(".mega-menu").children(".container").children(".mega-items-parent").slideUp(400) ;
     $(".li-drop > a ").not(this).removeClass("nav-arrow-rotate");
     })
-    $(".li-drop > a").removeAttr("href")
+    $(".li-drop > a").removeAttr("href");
+    $(".mega-item h3").click(function(){
+     $(this).siblings(".ul-es").slideToggle(300);
+     $(".mega-item h3").not(this).siblings(".ul-es").slideUp(300)
+     $(".mega-item h3").not(this).removeClass("nav-arrow-rotate");
+     $(this).toggleClass("nav-arrow-rotate");
+    })
   }
   
 

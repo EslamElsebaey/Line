@@ -63,7 +63,7 @@ body {
   font-size: 20px;
   text-transform: capitalize;
   color: #000000;
-  font-weight: 700;
+  font-weight: 800;
   text-align: start;
   margin: 0;
 }
@@ -997,6 +997,33 @@ nav .closeBtn {
 }
 
 @media only screen and (max-width: 991px) {
+  .mega-item ul {
+    display: none;
+    -webkit-padding-start: 15px;
+            padding-inline-start: 15px;
+  }
+  .mega-item ul li:first-of-type {
+    padding-top: 5px;
+  }
+  .mega-item ul li:last-of-type {
+    padding-bottom: 5px;
+  }
+  .mega-item h3 {
+    position: relative;
+    display: block;
+    margin-bottom: 7px;
+    color: #b5000a;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .mega-item h3::after {
+    content: "\f107";
+    font-size: 15px;
+    transition: all linear 0.3s;
+    font-family: "line Awesome free";
+    position: absolute;
+    inset-inline-end: 15px;
+  }
   .mega-menu {
     position: static;
     opacity: 1;
@@ -1012,18 +1039,14 @@ nav .closeBtn {
     flex-direction: column;
     justify-content: flex-start;
   }
-  .mega-item h3 {
-    margin-bottom: 10px;
-    color: #b5000a;
-  }
   .mega-item ul li a {
-    line-height: 2.1;
+    line-height: 28px;
     font-size: 13px;
   }
   .mega-item {
     align-items: flex-start;
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   .mega-menu > .container {
     padding: 0;
@@ -1160,7 +1183,7 @@ nav .closeBtn {
 .price .current-price {
   font-size: 16px;
   color: #000000;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 0;
   -webkit-margin-end: 7px;
           margin-inline-end: 7px;
@@ -1169,7 +1192,7 @@ nav .closeBtn {
   font-size: 14px;
   text-decoration: line-through;
   color: #4d4d4d;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .img-holder {
@@ -1211,22 +1234,19 @@ nav .closeBtn {
   .general-sec {
     padding: 50px 0 100px 0;
   }
-  .most-viewed, .special-offers, .bestseller {
-    border-bottom: none;
-  }
 }
 @media only screen and (max-width: 767px) {
   .item-desc {
     align-items: center;
   }
   .general-sec {
-    padding: 50px 0;
+    padding: 40px 0 70px 0;
   }
   .newArrivals {
     padding-bottom: 70px;
   }
   .general-sec .swiper-horizontal > .swiper-pagination-bullets, .general-sec .swiper-pagination-bullets.swiper-pagination-horizontal, .general-sec .swiper-pagination-custom, .general-sec .swiper-pagination-fraction {
-    bottom: -40px;
+    bottom: -30px;
   }
   .like-cart-sec button {
     width: 28px;
@@ -1661,9 +1681,8 @@ nav .closeBtn {
     margin-bottom: 8px;
   }
   html[dir=ltr] .feature-title1 {
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     line-height: 1.4;
-    height: 39px;
   }
   html[dir=ltr] .feature-title2 {
     line-height: 1.4;
@@ -1760,9 +1779,9 @@ html[dir=ltr] .message input {
   line-height: 32px;
 }
 .quick-links ul li a {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 27px;
-  font-weight: 500;
+  font-weight: 400;
   color: #808080;
   text-transform: capitalize;
   transition: all linear 0.2s;
@@ -1922,8 +1941,7 @@ html[dir=ltr] .message input {
 }
 @media only screen and (max-width: 767px) {
   .copyright .tasawk-logo {
-    margin-top: 15px;
-    margin-bottom: 10px;
+    order: 3;
   }
   .footer-item {
     margin-top: 0;
@@ -2013,6 +2031,7 @@ html[dir=ltr] .message input {
   }
   .copyright .rights {
     order: 2;
+    margin: 14px 0 6px 0;
     text-align: center;
     font-size: 13px;
     width: 100%;
@@ -2102,7 +2121,6 @@ html[dir=ltr] .message input {
   left: 0;
   right: 0;
   z-index: 50;
-  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.11);
   background-color: #fff;
   transition: all linear 0.5s;
 }
@@ -2116,16 +2134,6 @@ html[dir=ltr] .message input {
   background-color: #000;
 }
 
-.header-padding-30 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.padding-30 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .d-block {
   display: block;
 }
@@ -2135,10 +2143,10 @@ html[dir=ltr] .message input {
 }
 
 .fixed-header {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-bottom: 1px solid #d0d0d0;
 }
 .fixed-header .main-nav {
-  padding: 7px 30px;
+  padding: 12px 30px;
 }
 .fixed-header .logo img {
   height: 40px;
