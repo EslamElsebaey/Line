@@ -1,12 +1,12 @@
+
+
+$(window).load(function () {
+  $(".preloader").fadeOut();
+}) 
+
+
 $(document).ready(function () { 
-       // preloader
-       setTimeout(function () {
-        $(".preloader").css({
-          opacity : "0" , 
-          visibility : "hidden" , 
-        })
-      }, 3000);
-  
+       
 
 /***************************************************************************************** */
 
