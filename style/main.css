@@ -492,14 +492,14 @@ nav .closeBtn {
   -webkit-margin-end: 25px;
           margin-inline-end: 25px;
 }
-.ul-navbar > li .nav-ancor {
+.ul-navbar > li > .nav-ancor {
   font-size: 14px;
   color: #000;
   font-weight: 500;
   text-transform: capitalize;
   transition: all linear 0.2s;
 }
-.ul-navbar > li .nav-ancor:hover {
+.ul-navbar > li > .nav-ancor:hover {
   text-decoration: none;
   color: #b5000a;
 }
@@ -783,12 +783,12 @@ nav .closeBtn {
   .mynav {
     margin-top: 50px;
   }
-  .ul-navbar li .nav-ancor {
+  .ul-navbar > li > .nav-ancor {
     font-size: 16px;
     color: #000;
     font-weight: 500;
   }
-  .ul-navbar li .nav-ancor:hover {
+  .ul-navbar > li > .nav-ancor:hover {
     color: #000;
   }
   .account-text {
@@ -2128,6 +2128,7 @@ html[dir=ltr] .message input {
 
 .fixed {
   position: fixed;
+  border-bottom: 1px solid #F2F2F2;
   top: 0;
   left: 0;
   right: 0;

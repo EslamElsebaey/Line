@@ -233,7 +233,7 @@ li:last-child{
 }
 > li{
     margin-inline-end: 25px;
-    .nav-ancor{
+   > .nav-ancor{
         font-size: 14px;
         color: #000;
         font-weight: 500;
@@ -586,7 +586,7 @@ transform:  rotate(180deg)  !important;
 .mynav{
     margin-top: 50px;
 }
-.ul-navbar li .nav-ancor{
+.ul-navbar > li > .nav-ancor{
     font-size: 16px;
     color: #000;
     font-weight: 500;
